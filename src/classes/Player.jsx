@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import Interface from "../screens/Interface/Interface";
+import Interface from "../components/Interface/Interface";
 
 export default class Player extends Component {
   constructor(props) {

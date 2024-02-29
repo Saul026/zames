@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import SelectPage from "../screens/SelectPage/SelectPage";
 import Player from "./Player";
+import Timer from "../components/Timer";
 
 export default class Game extends Component {
   constructor(props) {
@@ -49,7 +50,7 @@ export default class Game extends Component {
         currentPlayer: prevState.currentPlayer === 1 ? 2 : 1,
       }),
       () => {
-        alert(`Переход хода\nХодит игрок №${this.state.currentPlayer}.`);
+        alert(`Переход хода\nХод игрока: ${this.state.currentPlayer === 1 ? this.props.player1Name : this.props.player2Name}.`);
       }
     );
   }
@@ -94,31 +95,7 @@ export default class Game extends Component {
           />
         ) : (
           <div className="game">
-            <div className="timer">
-              <span id="timer">
-                {parseInt(this.state.time / 60, 10) < 10
-                  ? "0" + parseInt(this.state.time / 60, 10)
-                  : parseInt(this.state.time / 60, 10)}:
-                {parseInt(this.state.time % 60, 10) < 10
-                  ? "0" + parseInt(this.state.time % 60, 10)
-                  : parseInt(this.state.time % 60, 10)}
-              </span>
-              {!this.state.gameOver ? (
-                <div className="timer__btns">
-                  <button id="timerStart" onClick={this.startTimer}>
-                    Запустить
-                  </button>
-                  <button id="timerStop" onClick={this.stopTimer}>
-                    Остановить
-                  </button>
-                  <button id="timerRestart" onClick={this.restartTimer}>
-                    Перезапустить
-                  </button>
-                </div>
-              ) : (
-                ""
-              )}
-            </div>
+           <Timer time={this.state.time} startTimer={this.startTimer} stopTimer={this.stopTimer} restartTimer={this.restartTimer} gameOver={this.state.gameOver} />
             <div
               style={{ display: "flex", flexDirection: "column", gap: "60px" }}
             >

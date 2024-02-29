@@ -1,5 +1,6 @@
-import "./App.css";
-import "./media.css";
+import './styles/reset.css'
+import './styles/App.css'
+import './styles/media.css'
 import { Route, Routes } from "react-router-dom";
 import MainPage from "./screens/MainPage";
 import StartPage from "./screens/StartPage/StartPage";
@@ -143,8 +144,8 @@ function App() {
   return (
     <div className="App">
       <Routes>
-        <Route element={<StartPage />} path="/" />
-        <Route element={<MainPage heroes={heroes} />} path="/main-page" />
+        <Route element={<StartPage />} path="*" />
+        <Route element={<MainPage heroes={heroes} />} path="zames/main-page" />
       </Routes>
     </div>
   );

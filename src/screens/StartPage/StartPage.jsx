@@ -1,5 +1,4 @@
 import React from "react";
-import "../../media.css";
 
 import { NavLink } from "react-router-dom";
 
@@ -56,7 +55,7 @@ const StartPage = () => {
           <p>Игра завершается, когда остается только один выживший персонаж.</p>
         </div>
       </div>
-      <NavLink className="start" id="start" to="/main-page">
+      <NavLink className="start" id="start" to="zames/main-page">
         НАЧАТЬ ИГРУ
       </NavLink>
     </div>
