@@ -1,0 +1,46 @@
+@media (width > 1300px) {
+  .start-page {
+    width: 60%;
+  }
+}
+@media (width < 1350px) {
+  .game {
+    margin: 0;
+    flex-direction: column;
+  }
+
+}
+
+@media (width < 860px) {
+  .card {
+    width: 150px;
+    height: 200px;
+  }
+  .card button {
+    margin-top: 90px;
+  }
+}
+@media (width < 630px) {
+  .game{
+    align-items: center;
+    justify-content: center;
+  }
+  .start-page__rule p {
+    font-size: 16px;
+  }
+}
+@media (width < 480px) {
+  .App {
+    padding: 10px;
+  }
+  .timer {
+    width: 300px;
+  }
+  .card {
+    width: 150px;
+    height: 150px;
+  }
+  .card button {
+    margin: 0;
+  }
+}

@@ -1,0 +1,175 @@
+.App {
+  min-width: 100vw;
+  min-height: 100vh;
+  padding: 40px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("../public/image/backgroud.jpg");
+  color: #1bfd9c;
+}
+.game {
+  margin: 0 5%;
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  color: aliceblue;
+}
+.start-page {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  font-size: 20px;
+}
+.start-page__content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.start-page__rule {
+  max-width: 300px;
+  text-align: center;
+  color: #fff;
+}
+.select-page {
+  display: flex;
+  flex-direction: column;
+  color: aliceblue;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+.select-card__container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+h5 {
+  color: #1bfd9c;
+  font-size: 40px;
+  font-weight: 700;
+}
+h3 {
+  color: #70c29e;
+  font-size: 24px;
+  font-weight: 500;
+}
+.timer {
+  width: 400px;
+  padding: 10px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  background: #fffcd3;
+  border: 1px dashed #e99c54;
+  border-radius: 5px;
+  text-align: center;
+  color: #000;
+}
+.timer__btns {
+  display: flex;
+  gap: 20px;
+}
+.start {
+  position: relative;
+  padding: 0.7em 2.7em;
+  line-height: 1.4em;
+  border: 2px solid #1bfd9c;
+  background: linear-gradient(
+    to right,
+    rgba(27, 253, 156, 0.1) 1%,
+    transparent 40%,
+    transparent 60%,
+    rgba(27, 253, 156, 0.1) 100%
+  );
+  color: #1bfd9c;
+  font-size: 15px;
+  letter-spacing: 0.06em;
+  box-shadow: inset 0 0 10px rgba(27, 253, 156, 0.4),
+    0 0 9px 3px rgba(27, 253, 156, 0.1);
+  font-family: inherit;
+  border-radius: 0.6em;
+  overflow: hidden;
+  transition: all 0.3s;
+}
+
+.start:hover {
+  color: #82ffc9;
+  box-shadow: inset 0 0 10px rgba(27, 253, 156, 0.6),
+    0 0 9px 3px rgba(27, 253, 156, 0.2);
+}
+
+.start:before {
+  content: "";
+  position: absolute;
+  left: -4em;
+  width: 4em;
+  height: 100%;
+  top: 0;
+  transition: transform 0.4s ease-in-out;
+  background: linear-gradient(
+    to right,
+    transparent 1%,
+    rgba(27, 253, 156, 0.1) 40%,
+    rgba(27, 253, 156, 0.1) 60%,
+    transparent 100%
+  );
+}
+.start:hover:before {
+  transform: translateX(15em);
+}
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+}
+.card__info {
+  display: flex;
+  flex-direction: column;
+}
+.card {
+  width: 200px;
+  height: 300px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  background-color: #fffcd3;
+  color: #000;
+  border: 2px solid #333;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.2s ease-in-out;
+}
+.card.active {
+  border: 5px solid #1bfd9c;
+  border-radius: 8px;
+}
+.card div {
+  font-size: 14px;
+  color: #666;
+}
+.card button {
+  margin-top: 150px;
+  border-radius: 6px;
+  border: 1px solid #666;
+  color: #666;
+}
+.card:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+}
+
+.select-page .card:hover {
+  cursor: default;
+}
+.card h3 {
+  margin: 10px 0;
+  font-size: 18px;
+  color: #333;
+}
