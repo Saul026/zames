@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/zames/static/css/main.57d45d01.css",
+    "main.js": "/zames/static/js/main.2e131bab.js",
+    "static/media/backgroud.jpg": "/zames/static/media/backgroud.8aec12aea9b235537072.jpg",
+    "index.html": "/zames/index.html",
+    "main.57d45d01.css.map": "/zames/static/css/main.57d45d01.css.map",
+    "main.2e131bab.js.map": "/zames/static/js/main.2e131bab.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.57d45d01.css",
+    "static/js/main.2e131bab.js"
+  ]
+}
