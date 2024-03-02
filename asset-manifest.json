@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/zames/static/css/main.177ae1aa.css",
-    "main.js": "/zames/static/js/main.8cfd8bfb.js",
+    "main.js": "/zames/static/js/main.592d4e80.js",
     "static/media/backgroud.jpg": "/zames/static/media/backgroud.8aec12aea9b235537072.jpg",
     "index.html": "/zames/index.html",
     "main.177ae1aa.css.map": "/zames/static/css/main.177ae1aa.css.map",
-    "main.8cfd8bfb.js.map": "/zames/static/js/main.8cfd8bfb.js.map"
+    "main.592d4e80.js.map": "/zames/static/js/main.592d4e80.js.map"
   },
   "entrypoints": [
     "static/css/main.177ae1aa.css",
-    "static/js/main.8cfd8bfb.js"
+    "static/js/main.592d4e80.js"
   ]
 }
